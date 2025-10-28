@@ -114,20 +114,21 @@
 
 | ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
 |----|-------------|----------|---------|--------|-------------|
-| | | | | | |
+| 1| Update of leader board| Medium| 3| Pending| -|
+| 2| App compatibility | Medium| 3| Pending| -|
 
 ## Metrics
 
-- Test Case Pass Percent: 
-- Defect Density: 
-- Risk Coverage Percent: 
-- Regression Success Rate: 
+- Test Case Pass Percent: 71.43%
+- Defect Density: low
+- Risk Coverage Percent: 80%
+- Regression Success Rate: 0%
 
 ### Defect Summary
 
-- Total Defects Logged: 
-- Critical High: 
-- Fix Rate: 
+- Total Defects Logged: 2
+- Critical High: 2
+- Fix Rate: 0%
 
 ## Test Control & Project Management
 
@@ -140,19 +141,17 @@
 | 3| Test report |test report | |  Viron Ochieng' |
 | 4| Final report | final report | | All |
 
-**Progress Tracking Method:**  
+**Progress Tracking Method:** 
+- Regular meeting via google meet
 **Change Control Notes:**
+- we used github to keep track of changes made.
 
 ## Lessons Learned
 
-- Most Defect Prone Feature: 
-- Risk Analysis Impact: 
-- Team Communication Effectiveness: 
-- Improvements for Next Cycle: 
-
-## Attachments
-
-- 
+- Most Defect Prone Feature: Guess the word feature
+- Risk Analysis Impact: High
+- Team Communication Effectiveness: Excellent
+- Improvements for Next Cycle: observing punctuality during meetings
 
 ## Sign Off
 
@@ -164,3 +163,4 @@
 
 
 ## Overall Summary
+Working together as a team of three in testing the word puzzle app was really amazing. Each member had something to learn from the other. We recommend immediate fixing of the defects/bugs raised.
