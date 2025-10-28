@@ -64,6 +64,13 @@
 | 5| CSS Responsiveness| Layout issues on smaller screens or mobile devices| Medium| Low| Low| Cross-device tests: Resize to <900px/mobile; check grid collapse, input/button wrapping, font clamping, and touch interactions (no hover-only states)|
 | 6| Performance on Repeated Plays| Degradation in app speed during extended sessions| Low| Medium| Low| Load tests: Solve 50+ puzzles in session.|
 | 7| Browser Compatibility| Feature failures across different browsers	|Low	| Medium	|Low	|Cross-browser tests: Chrome/Firefox/Safari/Edge |
+| 1	|Guess Input Validation |	Failure to handle edge cases in user input leading to crashes or glitches|	High	| Medium	|Medium|	Run functional tests on input field with edge cases (e.g., empty string, very long text >100 chars, special characters) to ensure trimming and lowercase conversion work without crashes or UI glitches.|
+| 2  |Hint Usage Tracking	| Incorrect deduction of points for multiple hints or allowing negative scores |	High	| High	| High |	End-to-end tests: Simulate multiple hint requests per puzzle; confirm deduction (−2 points) only once, no negative score below 0, and reduced reward (+5) on solve.|
+| 3 |Score Calculation & Bonus	| Errors in scoring flows or bonus application, including edge cases like 0-score	|High |	High	 |High	| Test scoring flows: Direct solve (+10), hint solve (+5 −2), bonus (×2 every 3rd solve); edge case: 0-score bonus.|
+| 4 | Event Handling (Buttons/Keys)|	UI glitches from rapid interactions or key presses	| High |	Medium |	Medium	| Usability tests: Rapid clicks on submit/hint/new/reset; Enter key on input.|
+| 5 | CSS Responsiveness |	Layout issues on smaller screens or mobile devices	 | Medium	| Low | Low	 | Cross-device tests: Resize to <900px/mobile; check grid collapse, input/button wrapping, font clamping, and touch interactions (no hover-only states).|
+| 6 | Performance on Repeated Plays | 	Degradation in app speed during extended sessions |	Low |	Medium | Low |	Load tests: Solve 50+ puzzles in session.|
+| 7 | Browser Compatibility |	Feature failures across different browsers |	Low	| Medium |	Low|	Cross-browser tests: Chrome/Firefox/Safari/Edge |
 
 
 
@@ -120,21 +127,21 @@
 
 | ID | Issue Title | Severity | Risk ID | Status | GitHub Link |
 |----|-------------|----------|---------|--------|-------------|
-|1 |Leaderboard not reset on game reset |Medium | |Pending | - |
-|2 |The app is only compatible with chrome browser |Medium |Pending | -|
+| 1| Update of leader board| Medium| 3| Pending| -|
+| 2| App compatibility | Medium| 3| Pending| -|
 
 ## Metrics
 
-- Test Case Pass Percent: 
-- Defect Density: 
-- Risk Coverage Percent: 
-- Regression Success Rate: 
+- Test Case Pass Percent: 71.43%
+- Defect Density: low
+- Risk Coverage Percent: 80%
+- Regression Success Rate: 0%
 
 ### Defect Summary
 
-- Total Defects Logged: 
-- Critical High: 
-- Fix Rate: 
+- Total Defects Logged: 2
+- Critical High: 2
+- Fix Rate: 0%
 
 ## Test Control & Project Management
 
@@ -147,19 +154,17 @@
 | 3| Test report |test report | |  Viron Ochieng' |
 | 4| Final report | final report | | All |
 
-**Progress Tracking Method:**  
+**Progress Tracking Method:** 
+- Regular meeting via google meet
 **Change Control Notes:**
+- we used github to keep track of changes made.
 
 ## Lessons Learned
 
-- Most Defect Prone Feature: 
-- Risk Analysis Impact: 
-- Team Communication Effectiveness: 
-- Improvements for Next Cycle: 
-
-## Attachments
-
-- 
+- Most Defect Prone Feature: Guess the word feature
+- Risk Analysis Impact: High
+- Team Communication Effectiveness: Excellent
+- Improvements for Next Cycle: observing punctuality during meetings
 
 ## Sign Off
 
@@ -171,4 +176,4 @@
 
 
 ## Overall Summary
-
+Working together as a team of three in testing the word puzzle app was really amazing. Each member had something to learn from the other. We recommend immediate fixing of the defects/bugs raised.
